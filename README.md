@@ -8,4 +8,6 @@ This repositiry is created specifically for the *Computer Language* classes.
 - Since my youth, I had a big interest in art, and not long ago, I have gotten interested in AI.
 - I am new to computer language and coding.
 
+I am extremely grateful and excited for this opportunity to learn *Computer Language*!
+
 **I am open to discussions, so feel free to ask me anything!**
