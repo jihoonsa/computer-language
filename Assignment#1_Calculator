@@ -1,0 +1,54 @@
+print('''
+======================================
+============ Calculator ==============
+======================================
+''')
+while True:
+    choice = int(input('''
+    Please note that this calculator does not produce decimals
+    1. Type "1" to proceed with your calculation
+    2. Type "2" to exit the calculator
+    '''))
+    if choice == 2:
+        break
+    else:
+        print('''
+        Before you start, here are some notes to help you:
+        Addition = "+"
+        Subtraction = "-"
+        Multiplication = "*"
+        Division = "/"
+        ''')
+
+        first_value = int(input('Please enter your first value '))
+        operation = input('Please enter your operation symbol (+ | - | * | /) ')
+        next_value = int(input('Please enter your next value '))
+        if operation == '+':
+            print(first_value, operation, next_value, '=', first_value + next_value)
+        elif operation == '-':
+            print(first_value, operation, next_value, '=', first_value - next_value)
+        elif operation == '*':
+            print(first_value, operation, next_value, '=', first_value * next_value)
+        elif operation == "/":
+            print(first_value, operation, next_value, '=', first_value / next_value)
+
+        first_answer = first_value + next_value or first_value - next_value or first_value * next_value or first_value / next_value
+
+        selection = 'O' or 'X'
+        while selection == 'O':
+            selection = input('Type "X" to reset calculation or "O" to further continue with your current calculation ')
+            if selection == 'O':
+                print('Enter the result of your previous calculation')
+                answer = int(input())
+                operation = input('Please enter your next operation symbol (+ | - | * | /) ')
+                next_value = int(input('Please enter your next value '))
+                if operation == '+':
+                    print(answer, operation, next_value, '=', answer + next_value)
+                elif operation == '-':
+                    print(answer, operation, next_value, '=', answer - next_value)
+                elif operation == '*':
+                    print(answer, operation, next_value, '=', answer * next_value)
+                elif operation == "/":
+                    print(answer, operation, next_value, '=', answer / next_value)
+
+                answer = first_answer + next_value or first_answer - next_value or first_answer * next_value or first_answer / next_value
